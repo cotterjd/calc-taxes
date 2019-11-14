@@ -2,7 +2,6 @@
 
 <?php
   if (sizeOf($argv) < 2) {
-    // required salary not given
     return print "salary required";
   }
   $salary = $argv[1];
