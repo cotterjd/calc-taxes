@@ -22,8 +22,6 @@
   $netSalary = $salary - $deductions;
   $standardDeduction = 24400;
   $childCredit = $numberOfChildren * 2000;
-  $payrollTaxRate = 0.0765;
-  $payrollTaxes = $netSalary * $payrollTaxRate;
   $ten99TaxableIncome = $netSalary + $spouseIncome - $standardDeduction;
   $w2TaxableIncome = $salary + $spouseIncome - $standardDeduction;
   $ten99Taxes = getIncomeTaxes($ten99TaxableIncome) - $childCredit + $netSalary * 0.153;
