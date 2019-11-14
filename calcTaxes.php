@@ -30,15 +30,6 @@
   $ten99Taxes = getIncomeTaxes($ten99TaxableIncome) - $childCredit + $netSalary * 0.153;
   $w2Taxes = getIncomeTaxes($w2TaxableIncome) - $childCredit + $salary * 0.0765;
 
-  #debug
-  #echo "1099 taxable income $ten99TaxableIncome\n";
-  #echo "w2 table income $w2TaxableIncome\n";
-  #echo "1099 taxes";
-  #echo getIncomeTaxes($ten99TaxableIncome);
-  #echo "child credit $childCredit";
-  #echo "salary $salary";
-  #echo "net salary $netSalary";
-
   echo "\nw2 total taxes: $w2Taxes\n";
   echo "1099 total taxes: $ten99Taxes\n";
 
