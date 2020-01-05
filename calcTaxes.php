@@ -30,6 +30,11 @@
   echo "\nw2 total taxes: $w2Taxes\n";
   echo "1099 total taxes: $ten99Taxes\n";
 
+/*
+* TODO: fix this function 
+* need to return income * rate not limit * rate if income is below limit
+* else need to add taxes for that bracket to a tax variable and move on within function 
+*/
   function getIncomeTaxes($income) {
     $l1 = 9700;
     $l1Taxes = $l1*.1;
